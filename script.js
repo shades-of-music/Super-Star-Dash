@@ -254,7 +254,7 @@ alert("as with all of my projects, i would like to remind you that God loves you
 		if (dist < as.radius + 18) {
 		  game.allStars.splice(i, 1);
 		  game.score += 50;
-		  game.shieldTime = 10.0; // 10 seconds shield
+		  game.shieldTime = 10.0; // 5 seconds shield
 		  playTinkle();
 		  createBurst(as.x, as.y, '#ffb454', 25);
 		  if (game.score > game.best) {
@@ -469,3 +469,10 @@ leftBtn.addEventListener('pointerup', () => keys.left = false);
 leftBtn.addEventListener('pointerleave', () => keys.left = false);
 leftBtn.addEventListener('pointercancel', () => keys.left = false); // Add this
 	render();
+	function showAlertList() {
+	// This is your "alert" list (an array of items)
+	const alertList = ["To move on computer: A/D or ←/→", "To move on phone/tablet: ◀ / ▶", "Objective: Collect stars and super stars (super stars last 10 seconds)","Avoid meteors"];
+	
+	// .join("\n") puts each item on a new line in the popup box
+	alert(alertList.join("\n"));
+	}
