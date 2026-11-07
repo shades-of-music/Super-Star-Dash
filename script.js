@@ -476,3 +476,11 @@ leftBtn.addEventListener('pointercancel', () => keys.left = false); // Add this
 	// .join("\n") puts each item on a new line in the popup box
 	alert(alertList.join("\n"));
 	}
+window.addEventListener('scroll', () => {
+  const topbar = document.querySelector('.topbar');
+  if (window.scrollY > 50) {
+    topbar.classList.add('scrolled');
+  } else {
+    topbar.classList.remove('scrolled');
+  }
+});
