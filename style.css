@@ -14,6 +14,19 @@
 	  --danger: #ff6b7d;
 	  --good: #7dffb4;
 	}
+.topbar.scrolled {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 700px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  background: rgba(10, 13, 24, 0.95);
+  border-radius: 0 0 12px 12px;
+}
 	html, body {
 	  margin: 0;
 	  min-height: 100%;
@@ -25,7 +38,7 @@
 	  background-attachment: fixed;
 	  color: var(--text);
 	  overflow-x: hidden;
-	  overflow-y: auto
+	  overflow-y: visible;
 	}
 
 	body {
@@ -67,14 +80,19 @@
   }
 }
 
-	.topbar {
-	  display: flex;
-	  justify-content: space-between;
-	  align-items: center;
-	  padding: 14px 18px;
-	  background: rgba(10, 13, 24, 0.65);
-	  border-bottom: 1px solid rgba(255,255,255,0.08);
-	}
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 700px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  z-index: 1000;
+  background: rgba(10, 13, 24, 0.95);
+  border-radius: 0 0 12px 12px;
+}
 	.yo{
 		font-family: Space Mono;
 	}
