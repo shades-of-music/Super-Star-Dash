@@ -35,8 +35,7 @@
 	}
 
 	.game-shell {
-	  width: 100vw;
-	  max-width: 90%;
+	  width: 500px;
 	  min-height: 80vh;
 	  background: var(--panel);
 	  border: 1px solid var(--panel-border);
