@@ -25,7 +25,7 @@
 	  background-attachment: fixed;
 	  color: var(--text);
 	  overflow-x: hidden;
-	  overflow-y: auto;
+	  overflow-y: auto
 	}
 
 	body {
@@ -35,14 +35,15 @@
 	}
 
 	.game-shell {
-	  width: 750px;
+	  width: 100vw;
+	  max-width: 90%;
 	  min-height: 80vh;
 	  background: var(--panel);
 	  border: 1px solid var(--panel-border);
 	  border-radius: 18px;
 	  box-shadow: 0 20px 50px rgba(0,0,0,0.45);
 	  backdrop-filter: blur(12px);
-	  overflow: visible;
+	  overflow: scroll;
 	  position: relative;
 	  text-align: center;
 	  margin: 30px;
