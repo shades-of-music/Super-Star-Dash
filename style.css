@@ -14,6 +14,9 @@
 	  --danger: #ff6b7d;
 	  --good: #7dffb4;
 	}
+.about-dropdown{
+	margin: 10px;
+}
 .topbar.scrolled {
   position: fixed;
   top: 0;
