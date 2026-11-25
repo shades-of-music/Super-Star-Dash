@@ -196,22 +196,23 @@ span{
 }
 .container {
   display: inline-block;
-  place-items: left;
+  justify-self: start; /* Forces the button to the left */
   cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 4px;
-  background-color: #FFFFFF;
+  background-color: #000000;
   margin: 6px 0;
   transition: 0.4s;
 }
 
 #menu {
-  display: none;
+ display: none;
   position: absolute;
-  top: 25px;
+  top: 35px;
+  left: 0; /* This forces the menu to align to the left */
   background: #141d35;
   color: white;
   padding: 10px;
@@ -259,4 +260,3 @@ span{
 	button:active {
 	  transform: translateY(0);
 	}
-
