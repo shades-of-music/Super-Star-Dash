@@ -484,3 +484,9 @@ window.addEventListener('scroll', () => {
     topbar.classList.remove('scrolled');
   }
 });
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  const container = document.querySelector('.container');
+  menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+  container.classList.toggle('change');
+}
