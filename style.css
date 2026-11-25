@@ -194,6 +194,45 @@ span{
 	color: var(--accent);
 	font-size: 25px;
 }
+.container {
+  display: inline-block;
+  place-items: left;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 4px;
+  background-color: #FFFFFF;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 25px;
+  background: #141d35;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+
+#menu a:hover {
+  background: #555;
+}
+
+.change .bar1 { transform: translate(0, 11px) rotate(-45deg); }
+.change .bar2 { opacity: 0; }
+.change .bar3 { transform: translate(0, -11px) rotate(45deg); }
 /* Show buttons only when the screen is smaller than 768 pixels */
 @media (max-width: 2796px) {
   .mobile-btns {
@@ -220,3 +259,4 @@ span{
 	button:active {
 	  transform: translateY(0);
 	}
+
