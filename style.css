@@ -189,7 +189,7 @@
 	 .button{
 			padding: 2vw;
 			border-radius: 14vw;
-			max-border-radius: 75;
+			border-radius: min(14vw, 75px);
 			font-size: 30px;
 			margin: 15px;
 			height: 28vw;
