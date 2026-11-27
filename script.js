@@ -453,7 +453,27 @@ alert("as with all of my projects, i would like to remind you that God loves you
 	  startGame();
 	});
 
-   
+	const fullscreenBtn = document.getElementById('fullscreenBtn');
+	const gameArea = document.querySelector('.game-area');
+
+	fullscreenBtn.addEventListener('click', async () => {
+	  try {
+		if (document.fullscreenElement) {
+		  await document.exitFullscreen();
+		} else {
+		  await gameArea.requestFullscreen();
+		}
+	  } catch (error) {
+		console.error('Unable to toggle fullscreen:', error);
+	  }
+	});
+
+	document.addEventListener('fullscreenchange', () => {
+	  fullscreenBtn.textContent = document.fullscreenElement === gameArea
+		? 'Exit Fullscreen'
+		: 'Fullscreen';
+	});
+
 	bestEl.textContent = String(game.best);
 	resetGame();
 	const leftBtn = document.getElementById('leftBtn');
