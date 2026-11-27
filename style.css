@@ -209,7 +209,7 @@ span{
 
 #menu {
  display: none;
-  position: absolute;
+  position: relative;
   top: 35px;
   left: 0; /* This forces the menu to align to the left */
   background: #141d35;
@@ -217,6 +217,7 @@ span{
   padding: 10px;
   margin: 5px;
   border-radius: 20px;
+  z-index: 1500;
 }
 
 #menu a {
