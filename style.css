@@ -197,6 +197,7 @@ span{
   display: inline-block;
   justify-self: start; /* Forces the button to the left */
   cursor: pointer;
+  position: relative;
 }
 
 .bar1, .bar2, .bar3 {
@@ -218,6 +219,8 @@ span{
   margin: 5px;
   border-radius: 20px;
   z-index: 1500;
+  position: absolute;
+  width: 250px;
 }
 
 #menu a {
