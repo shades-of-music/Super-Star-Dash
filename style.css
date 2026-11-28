@@ -25,7 +25,7 @@
   padding: 14px 20px;
   box-sizing: border-box;
   z-index: 1000;
-  background: rgba(10, 13, 24, 0.5);
+  background: rgba(10, 13, 24, 0);
   border-radius: 0; /* Removes the curved corners so it looks like a flat edge */
 }
 	html, body {
@@ -231,6 +231,7 @@ span{
   justify-self: start; /* Forces the button to the left */
   cursor: pointer;
   position: relative;
+  margin: 10px;
 }
 
 .bar1, .bar2, .bar3 {
